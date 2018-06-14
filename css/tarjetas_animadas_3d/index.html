@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1,minimum-scale=1.0">
+	<title>Targetas 3D</title>
+	<link id="linkcss" rel="stylesheet" href="tarjetas3d.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet"> 
+</head>
+<body>
+	<div class="tarjetas">
+		<div class="contenedor_tarjeta">
+			<a href="#">
+				<figure>
+					<div class="imagen"><img src="img/foto1.jpg" alt="" class="frontal"></div>
+					<figcaption class="trasera">
+						<h2 class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, consequatur.</h2>
+						<hr class="barra">
+						<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, molestiae, ad. Deserunt nam, delectus rerum quae officia eveniet maiores provident</p>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+		<div class="contenedor_tarjeta">
+			<a href="#">
+				<figure>
+					<div class="imagen"><img src="img/foto2.jpg" alt="" class="frontal"></div>
+					<figcaption class="trasera">
+						<h2 class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, consequatur.</h2>
+						<hr class="barra">
+						<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, molestiae, ad. Deserunt nam, delectus rerum quae officia eveniet maiores provident</p>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+		<div class="contenedor_tarjeta">
+			<a href="#">
+				<figure>
+					<div class="imagen"><img src="img/foto3.jpg" alt="" class="frontal"></div>
+					<figcaption class="trasera">
+						<h2 class="titulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, consequatur.</h2>
+						<hr class="barra">
+						<p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, molestiae, ad. Deserunt nam, delectus rerum quae officia eveniet maiores provident</p>
+					</figcaption>
+				</figure>
+			</a>
+		</div>
+	</div>	
+	<div class="botones">
+		<div class="boton">
+		<input type="button" id="html" value="ver Html"></div>
+		<input type="button" id="css" value="ver Html y css">
+	</div>
+	<script>
+		var linkcss= document.querySelector("#linkcss");
+		document.querySelector("#html").onclick=() =>{
+			alert("La página que se muestra solo contiene html.")
+			linkcss.href=""}
+		var ccs= document.querySelector("#css").onclick=()=>{
+			alert("La página que se muestra contiene html y css.")
+			linkcss.href="tarjetas3d.css"}
+	</script>
+</body>
+</html>

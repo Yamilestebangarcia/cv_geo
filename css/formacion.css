@@ -1,0 +1,167 @@
+section{
+  color:#7972D8;
+}
+
+section h2{
+  font-size: 45px;
+  padding-bottom: 30px;
+  background: rgb(255, 223, 115);
+  padding: 30px;
+}
+section ol li.varios article{
+  padding: 50px;
+}
+section ol li.varios article ul.otros li:nth-child(1){
+  padding-bottom: 10px;
+}
+section ol li h3{
+  padding: 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  background:rgba(255, 223, 115,.75);
+}
+
+section ol li article ul li{
+  list-style: none;
+}
+section ol li article ul li h4{
+text-align: left;
+padding: 50px;
+ font-size: 20px;
+ font-weight: bolder;
+}
+section ol li article ul li dl dt{
+text-align: center;
+font-size: 18px;
+padding-bottom: 15px;
+padding-left: 60px;
+font-weight: bold;
+}
+section ol li article ul li dl dd{
+text-align: center;
+padding-bottom: 30px;
+padding-left: 65px;
+font-size: 16px;
+}
+section ol li article ul li dl dd a{
+text-decoration: none;
+color: #7972D8;
+}
+section ol li article ul li dl dd a span:hover{
+  background:#7972D8;
+  color:white;
+  padding: 5px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 1px #100873;
+}
+section ol li article ul li dl dd a div{
+font-size: 40px;
+width: 60px;
+height: 60px;
+background:rgba(255, 223, 115,.75);
+border-radius: 50%;
+display: inline-block;
+margin-left: 20px;
+margin-right: 10px;
+animation: botonproyecto 2s infinite linear;
+}
+@keyframes botonproyecto{
+  0%, 100%{
+      background:rgba(255, 223, 115,.75);
+      color: #7972D8;
+    }
+  50%{
+     background:#7972D8;
+      color:white;
+  }
+}
+.fa-video-camera:before {
+    content: "\f03d";
+    position: relative;
+    top: 8px;
+}
+.fa-book:before{
+    content: "\f02d";
+    position: relative;
+    top: 8px;
+}
+section ol li article ul li ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section ol li article ul li ul li{
+padding: 10px 0px;
+}
+section ol li article ul li ul li.ultimo{
+  padding-bottom: 30px ;
+  padding-top: 10px;
+}
+.barra{
+  border: 1px solid black;
+  width: 400px;
+  height: 20px;
+  background: white;
+  border-radius: 50px;
+  margin:20px;
+
+}
+.barra .porcentaje{
+  background:rgba(255, 223, 115,.75);
+  height: 100%;
+  border-radius: 50px 50px 50px 50px;
+  text-align: center;
+  line-height: 22px;
+  color: #7972D8;
+}
+.barra .porcentaje div{
+  position: relative;
+  left:0%;
+  z-index: 10;
+}
+.valorarcgis{
+  width:90%; /*porcentaje que  se muestra*/
+}
+.valorarwindow{
+  width:75%; /*porcentaje que  se muestra*/
+}
+.valoroffice{
+  width:75%; /*porcentaje que  se muestra*/
+}
+.valorautocad{
+ width:60%; /*porcentaje que  se muestra*/  
+}
+.valorphotoshop{
+  width:55%; /*porcentaje que  se muestra*/
+}
+.valorhtml{
+width:90%; /*porcentaje que  se muestra*/
+}
+.valorcss{
+width:85%; /*porcentaje que  se muestra*/
+}
+.valorjavascrip{
+width:45%; /*porcentaje que  se muestra*/
+}
+.valorpython{
+width:60%; /*porcentaje que  se muestra*/
+}
+.valorphp{
+ width:20%; /*porcentaje que  se muestra*/ 
+}
+.efecto{
+  display:inline-block;
+  width:10%;
+  height:100%;
+  background:#FF9900;
+  border-radius: 50px;
+  float: left;
+  animation: barraefecto 5s infinite linear;
+  
+}
+@keyframes barraefecto{
+  0%, 100%{float: left;
+    }
+  50%{
+    transform:translateX(900%);;
+  }

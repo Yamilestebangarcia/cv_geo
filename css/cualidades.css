@@ -1,0 +1,78 @@
+section{
+  color:#7972D8;
+}
+
+section h2{
+  font-size: 45px;
+  padding-bottom: 30px;
+  background: rgb(255, 223, 115);
+  padding: 30px;
+}
+section article{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section article ul li{
+  list-style: none;
+  padding: 40px 0px;
+}
+section article ul li:nth-child(1){
+  padding-top: 80px;
+}
+section article ul li:nth-last-child(1){
+  padding-bottom: 80px;
+}
+section article ul li p{
+  padding-bottom: 20px;
+}
+section article ul li .barra{
+  border: 1px solid black;
+  width: 400px;
+  height: 20px;
+  background: white;
+  border-radius: 50px;
+  margin:20px;
+
+}
+section article ul li .barra .porcentaje{
+  background:rgba(255, 223, 115,.75);
+  height: 100%;
+  border-radius: 50px 50px 50px 50px;
+  text-align: center;
+  line-height: 22px;
+  color: #7972D8;
+}
+.barra .porcentaje div{
+  position: relative;
+  left:0%;
+  z-index: 10;
+}
+.valortrabajador{
+  width:95%; /*porcentaje que  se muestra*/
+}
+.valorcreativo{
+width:85%; /*porcentaje que  se muestra*/
+}
+.valorautodidacta{
+width:95%; /*porcentaje que  se muestra*/
+}
+.valortrabaja{
+ width:90%; /*porcentaje que  se muestra*/ 
+}
+.efecto{
+  display:inline-block;
+  width:10%;
+  height:100%;
+  background:#FF9900;
+  border-radius: 50px;
+  float: left;
+  animation: barraefecto 5s infinite linear;
+  
+}
+@keyframes barraefecto{
+  0%, 100%{float: left;
+    }
+  50%{
+    transform:translateX(900%);;
+  }

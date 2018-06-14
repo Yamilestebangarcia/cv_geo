@@ -1,0 +1,30 @@
+.presentacion{
+  color:#7972D8;
+  font-family: 'Shadows Into Light', cursive;
+}
+.presentacion h2{
+  font-size: 45px;
+  padding-bottom: 30px;
+  background: rgb(255, 223, 115);
+  padding: 30px;
+}
+.presentacion .primer{
+font-size:30px;
+text-align: left;
+line-height: 100px;
+letter-spacing: 5px;
+padding: 20px 60px 30px 60px;
+padding-bottom: 30px;
+background: rgba(255, 223, 115,.75);
+}
+.presentacion .primer span,.presentacion .segundo span {
+ font-size:100px; 
+}
+.presentacion .segundo{
+  font-size:30px;
+  text-align:left;
+  line-height: 100px;
+  padding: 0px 60px 60px 60px;
+  background: rgba(255, 223, 115,.75);
+
+}

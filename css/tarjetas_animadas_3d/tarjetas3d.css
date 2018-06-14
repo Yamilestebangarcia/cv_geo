@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+	background: #f0f2f1;
+	font-family: "Open Sans","Sans-serif";
+}
+a{
+	text-decoration: none;
+}
+.tarjetas{
+max-width: 1200px;
+margin:50px auto;
+display: flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: center;
+}
+.contenedor_tarjeta{
+	margin:20px;
+}
+ .contenedor_tarjeta:hover figure{
+ 	-webkit-transform:perspective(600px) rotatey(180deg) ;
+ 	-ms-transform:perspective(600px) rotatey(180deg) ;
+ 	-o-transform:perspective(600px) rotatey(180deg) ;
+ 	transform:perspective(600px) rotatey(180deg) ;
+ 	-webkit-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+	box-shadow: 0px 2px 10px 2px rgba(0,0,0,0.25);
+ }
+ .contenedor_tarjeta figure .imagen{
+ 	overflow: hidden;
+ 	width:300px;
+	height:350px;
+	border-color: transparent;
+	border-radius: 5px;
+ }
+  .contenedor_tarjeta:hover figure img{
+  	/*optativas relativas a la imagen volteada*/
+  	filter: blur(2px)grayscale(1); 
+  	-webkit-filter: blur(2px)grayscale(1);
+  	transform: scale(1.25,1.25) ;
+  }
+ .contenedor_tarjeta a{
+	display: inline-block;
+}
+.contenedor_tarjeta a figure{
+	width:300px;
+	height:350px;
+	margin: 0px;
+	position: relative;
+	transition: all ease .5s;
+	transform-style: preserve-3d;
+	transform:perspective(600px) rotateY(0deg);
+	border-radius: 5px;
+}
+figure .frontal,
+figure .trasera,
+figure .imagen{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	transition: all ease .5s;
+	/*overflow: hidden;*/
+}
+.frontal{
+	display: block;
+	/*backface-visibility: hidden;*/
+}
+.trasera{
+	position: absolute;
+	top:0;
+	padding:20px;
+	color:#fff; 
+	transform: perspective(600px) rotatey(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+    background: rgba(255,255,255,0.75);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(0,0,0,0.75) 90%, rgba(0,0,0,0.75) 94%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0.75)), color-stop(90%, rgba(0,0,0,0.75)), color-stop(94%, rgba(0,0,0,0.75)), color-stop(100%, rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(0,0,0,0.75) 90%, rgba(0,0,0,0.75) 94%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(0,0,0,0.75) 90%, rgba(0,0,0,0.75) 94%, rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0.75) 0%, rgba(0,0,0,0.75) 90%, rgba(0,0,0,0.75) 94%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0.75) 0%, rgba(0,0,0,0.75) 90%, rgba(0,0,0,0.75) 94%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000', GradientType=0 );
+
+}
+figure .trasera .titulo{
+	color:#fff;
+	font-weight: normal;
+	margin-bottom: 20px;
+	font-family: "roboto",Sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+figure .trasera .barra {
+	height: 2px;
+	background:#fff;
+	margin-bottom: 20px;
+	opacity: 0.5; 
+	color:#fff;
+}
+figure .trasera .parrafo{
+	font-family: "open sans", Sans-serif;
+	line-height:22px;
+	font-size: 14px;
+}
+.botones{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.botones input[type="button"] {
+    margin: 9px;
+    border-radius: 7px;
+    padding: 13px;
+    color: #fff;
+    background: orange;
+    box-shadow: 2px 2px 4px 3px grey;
+}
+.botones input[type="button"]:hover{
+	color: orange;
+    background: #fff;
+    box-shadow: 2px 2px 4px 3px grey;
+    cursor: pointer;
+}
+
+@media screen and (max-width:992px){
+	figure .trasera{
+		backface-visibility:visible; 
+		transform: perspective(600px) rotatey(0deg);
+	}
+	.contenedor_tarjeta:hover figure{
+		transform: perspective(600px) rotatey(0deg);
+	}
+}
+
+/* barra de scroll scrool*/
+body::-webkit-scrollbar {
+  width: 7px;
+  background: #f0f2f1;
+ 
+}
+body::-webkit-scrollbar-thumb{
+background: orange; 
+border-radius: 50px;
+
+}
+body::-webkit-scrollbar-thumb:hover{
+background: rgba(255,199,1,1);
+border: 1px solid black;
+}
+body::-webkit-scrollbar-thumb:active{
+background:white;
+border: 2.25px solid orange;
+}
+
+/* barra de scroll scrool*/
